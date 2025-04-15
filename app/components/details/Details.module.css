@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-micro);
+    width: 100%;
+}
+
+.scale {
+    display: flex;
+    gap: 3px;
+    height: 1.2rem;
+    
+}
+
+ .cell {
+    flex-grow: 1;
+    height: 80%;
+    margin: auto;
+    background-color: var(--opaque);
+
+    &:nth-child(2) {
+        border-bottom-left-radius: var(--size-micro);
+        border-top-left-radius: var(--size-micro);
+    }
+    &:nth-child(11) {
+        border-bottom-right-radius: var(--size-micro);
+        border-top-right-radius: var(--size-micro);
+    }
+}
+
+.active {
+    background-color: var(--text-primary);
+}

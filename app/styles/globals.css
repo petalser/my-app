@@ -1,3 +1,28 @@
+:root {
+  --tasty-orange: #ff8c00;
+  --tasty-orange-transparent: #ff8c0055;
+  --black-transparent: #0005;
+  --pale-orange: #fc4;
+  --heavy-gray: #666;
+
+  --text-primary: black;
+  --hover: var(--heavy-gray);
+  --opaque: var(--black-transparent);
+  --bg: #ddd;
+
+  --size-micro: .3rem;
+  --size-sm: 1rem;
+  --size-md: 3rem;
+  --size-xxl: 12rem;
+}
+
+[data-theme="dark"] {
+  --text-primary: var(--tasty-orange);
+  --hover: var(--pale-orange);
+  --opaque: var(--tasty-orange-transparent);
+  --bg: #333;
+}
+
 html,
 body {
   min-height: 100vh;
@@ -6,11 +31,28 @@ body {
   font-family: system-ui, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  transition: all .3s ease;
+}
+
+.volumetric {
+  box-shadow: 3px 3px 7px black; 
+}
+
+.glowing {
+  box-shadow: 
+        0px 0px 7px 1px var(--tasty-orange);
+  border-radius: var(--size-micro);     
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
 }

@@ -1,0 +1,20 @@
+.text {
+    margin-inline: auto;
+    padding: var(--size-micro);
+
+    font-weight: 400;
+    letter-spacing: normal;
+    text-transform: none;
+
+    border-bottom: 2px solid var(--text-primary);
+
+    & strong {
+        font-weight: 900;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    .text {
+        width: 100%;
+    }
+}

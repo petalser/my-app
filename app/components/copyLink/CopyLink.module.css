@@ -1,0 +1,53 @@
+.iconCopy {
+    display: flex;
+    gap: var(--size-micro);
+    position: absolute;
+    top: var(--size-micro);
+    left: var(--size-micro);
+
+    padding: var(--size-micro);
+
+    width: 38px;
+    
+    color: var(--text-primary);
+    background-color: var(--bg);
+    border: 2px solid var(--text-primary);
+    border-radius: var(--size-micro); 
+
+    &:hover {
+        color: var(--bg);
+        background-color: var(--text-primary);
+        border-color: var(--hover);
+        
+        cursor: pointer;
+    
+        & .copyLinkText {
+            width: 140px;
+            color: var(--text-primary);
+        }
+    }
+}
+
+.copyLinkText {
+    color: var(--opaque);
+    border-radius: var(--size-micro);
+    border-right: 3px solid var(--text-primary);
+
+    text-transform: none;
+    text-align: right;
+    letter-spacing: normal;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: -.8rem;
+    left: var(--size-micro);
+    z-index: -1;
+
+    height: 1.5rem;
+    width: 0;
+
+    padding-inline: .6rem;
+
+    transition: width .1s linear, color .3s linear;
+}

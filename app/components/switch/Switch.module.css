@@ -1,0 +1,74 @@
+.tool {
+  display: inline-flex;
+  
+  width:  var(--size-xxl);
+  height: var(--size-md);
+
+  color: var(--text-primary);
+  background-color: var(--bg);
+  border-radius: var(--size-micro);
+}
+
+.toolLabel > :not(input) {
+    margin: auto;
+    max-height: 2rem;
+}
+
+.toolLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    padding: .3rem;
+    width: 50%;
+    
+    border: 2px solid transparent;
+    border-radius: var(--size-micro);
+}
+
+.toolLabel:nth-child(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.toolLabel:nth-child(2) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.toolLabel:hover {
+    color: var(--hover);
+    border-color: var(--hover);
+    cursor: pointer;
+}
+
+.toolInput {
+    appearance: none;
+    height: 2rem;
+    margin: auto 0;
+    border: 3px solid black;
+}
+
+.toolInput:checked {
+    border: 3px solid var(--tasty-orange);
+}
+
+@media screen and (max-width: 666px) {
+    .tool {
+        width: 100%;
+        height: auto;
+    }
+
+    .toolLabel {
+        padding-block: 0;
+    }
+
+    .toolLabel > :not(input) {
+        margin: 0 auto;
+        max-height: 2rem;
+    }
+
+    .toolInput {
+        height: 1rem;
+    }
+}

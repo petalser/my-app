@@ -1,0 +1,30 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: var(--bg);
+    padding-inline: var(--size-sm);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-sm);
+    
+    position: relative;
+
+    width: 50dvw;
+    margin: auto;
+    padding: var(--size-sm);
+}
+
+@media screen and (max-width: 666px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    width: 100%;
+    margin: 0;
+  }
+}

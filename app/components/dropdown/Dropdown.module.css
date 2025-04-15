@@ -1,0 +1,37 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 0;
+
+  overflow: hidden;
+}
+
+.select {
+  color: var(--text-primary);
+  background-color: var(--bg);
+  border-radius: var(--size-micro);
+  
+  width:  var(--size-xxl);
+  height: var(--size-md);
+}
+
+.select:hover {
+  color: var(--hover);
+  border-color: var(--hover);
+  cursor: pointer;
+
+}
+
+@media screen and (max-width: 666px) {
+  .select {
+    width: 100%;
+    height: auto;
+  }
+}

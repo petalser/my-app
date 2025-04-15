@@ -1,0 +1,12 @@
+.toolbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbox > * {
+    margin-bottom: var(--size-sm);
+}
+
+.toolbox:last-child {
+    margin-bottom: 0;
+}
