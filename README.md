@@ -1,3 +1,9 @@
+# ZODIAKK
+
+Horoscope forecast that comes from nowhere & goes into eternity
+
+Next.js & RTK based app
+
 # Redux Toolkit TypeScript Example
 
 This example shows how to integrate Next.js with [Redux Toolkit](https://redux-toolkit.js.org).
